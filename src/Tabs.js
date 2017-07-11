@@ -114,9 +114,7 @@ export default class Tabs extends React.Component {
       [className]: !!className,
     });
 
-    // debugger;
     this.tabBar = renderTabBar();
-    // debugger;
     const contents = [
       React.cloneElement(this.tabBar, {
         prefixCls,
@@ -137,7 +135,6 @@ export default class Tabs extends React.Component {
         key: 'tabContent',
       }),
     ];
-    // debugger;
     if (tabBarPosition === 'bottom') {
       contents.reverse();
     }
